@@ -129,7 +129,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D43-Ui-4s7">
-                                <rect key="frame" x="89" y="651.66666666666663" width="215" height="43"/>
+                                <rect key="frame" x="89" y="632.66666666666663" width="215" height="43"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -145,14 +145,16 @@
                             <constraint firstItem="D43-Ui-4s7" firstAttribute="centerX" secondItem="c3p-KX-hfO" secondAttribute="centerX" id="Wpg-s1-80M"/>
                             <constraint firstItem="c3p-KX-hfO" firstAttribute="top" secondItem="WKU-sK-iuO" secondAttribute="bottom" constant="45" id="Xdc-hW-nGq"/>
                             <constraint firstItem="ceM-1z-xS4" firstAttribute="top" secondItem="Mb1-hd-H86" secondAttribute="top" constant="20" id="hhP-B3-X8Y"/>
-                            <constraint firstItem="D43-Ui-4s7" firstAttribute="top" secondItem="c3p-KX-hfO" secondAttribute="bottom" constant="45" id="pSK-xJ-6vU"/>
+                            <constraint firstItem="D43-Ui-4s7" firstAttribute="top" secondItem="c3p-KX-hfO" secondAttribute="bottom" constant="26" id="pSK-xJ-6vU"/>
                             <constraint firstItem="WKU-sK-iuO" firstAttribute="centerX" secondItem="Mb1-hd-H86" secondAttribute="centerX" id="y7n-D7-wbV"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bountyLabel" destination="D43-Ui-4s7" id="Obe-qP-riP"/>
+                        <outlet property="bountyLableCenterX" destination="Wpg-s1-80M" id="pKJ-a6-N0b"/>
                         <outlet property="imgView" destination="WKU-sK-iuO" id="wM8-dH-U3M"/>
                         <outlet property="nameLabel" destination="c3p-KX-hfO" id="5J8-pW-uEo"/>
+                        <outlet property="nameLabelCenterX" destination="3Yj-lc-1Be" id="Rwi-xx-PCF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vOf-oQ-sQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

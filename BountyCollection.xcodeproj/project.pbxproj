@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		037832112B07389E005BA729 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037832102B07389E005BA729 /* AppDelegate.swift */; };
 		037832132B07389E005BA729 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037832122B07389E005BA729 /* SceneDelegate.swift */; };
-		037832152B07389E005BA729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037832142B07389E005BA729 /* ViewController.swift */; };
 		037832182B07389E005BA729 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 037832162B07389E005BA729 /* Main.storyboard */; };
 		0378321A2B0738A1005BA729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 037832192B0738A1005BA729 /* Assets.xcassets */; };
 		0378321D2B0738A1005BA729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0378321B2B0738A1005BA729 /* LaunchScreen.storyboard */; };
+		037832252B0738DB005BA729 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037832242B0738DB005BA729 /* BountyViewController.swift */; };
+		037832272B0738F9005BA729 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037832262B0738F9005BA729 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0378320D2B07389D005BA729 /* BountyCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BountyCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037832102B07389E005BA729 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		037832122B07389E005BA729 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		037832142B07389E005BA729 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		037832172B07389E005BA729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		037832192B0738A1005BA729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0378321C2B0738A1005BA729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0378321E2B0738A1005BA729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037832242B0738DB005BA729 /* BountyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
+		037832262B0738F9005BA729 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				037832102B07389E005BA729 /* AppDelegate.swift */,
 				037832122B07389E005BA729 /* SceneDelegate.swift */,
-				037832142B07389E005BA729 /* ViewController.swift */,
+				037832242B0738DB005BA729 /* BountyViewController.swift */,
+				037832262B0738F9005BA729 /* DetailViewController.swift */,
 				037832162B07389E005BA729 /* Main.storyboard */,
 				037832192B0738A1005BA729 /* Assets.xcassets */,
 				0378321B2B0738A1005BA729 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				037832152B07389E005BA729 /* ViewController.swift in Sources */,
 				037832112B07389E005BA729 /* AppDelegate.swift in Sources */,
+				037832252B0738DB005BA729 /* BountyViewController.swift in Sources */,
 				037832132B07389E005BA729 /* SceneDelegate.swift in Sources */,
+				037832272B0738F9005BA729 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

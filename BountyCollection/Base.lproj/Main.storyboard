@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Bounty View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BountyViewController" customModule="BountyCollection" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <segue destination="ara-4h-Vex" kind="presentation" identifier="showDetail" id="pNC-2h-yb8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="74" y="-2"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="jTl-Ra-en3">
+            <objects>
+                <viewController id="ara-4h-Vex" customClass="DetailViewController" customModule="BountyCollection" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VR8-cM-lIx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceM-1z-xS4">
+                                <rect key="frame" x="327" y="20" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="3uk-6u-O4O"/>
+                                    <constraint firstAttribute="width" constant="50" id="q6z-ev-knb"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="close_ic"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WKU-sK-iuO">
+                                <rect key="frame" x="50" y="100.00000000000003" width="293" height="418.66666666666674"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WKU-sK-iuO" secondAttribute="height" multiplier="7:10" id="EEG-15-GT4"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luffy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3p-KX-hfO">
+                                <rect key="frame" x="152.66666666666666" y="563.66666666666663" width="88" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300000000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D43-Ui-4s7">
+                                <rect key="frame" x="89" y="651.66666666666663" width="215" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mb1-hd-H86"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c3p-KX-hfO" firstAttribute="centerX" secondItem="WKU-sK-iuO" secondAttribute="centerX" id="3Yj-lc-1Be"/>
+                            <constraint firstItem="WKU-sK-iuO" firstAttribute="leading" secondItem="Mb1-hd-H86" secondAttribute="leading" constant="50" id="53H-UH-hwl"/>
+                            <constraint firstItem="WKU-sK-iuO" firstAttribute="top" secondItem="Mb1-hd-H86" secondAttribute="top" constant="100" id="77c-wU-vI3"/>
+                            <constraint firstItem="Mb1-hd-H86" firstAttribute="trailing" secondItem="ceM-1z-xS4" secondAttribute="trailing" constant="16" id="SDz-sb-y8h"/>
+                            <constraint firstItem="D43-Ui-4s7" firstAttribute="centerX" secondItem="c3p-KX-hfO" secondAttribute="centerX" id="Wpg-s1-80M"/>
+                            <constraint firstItem="c3p-KX-hfO" firstAttribute="top" secondItem="WKU-sK-iuO" secondAttribute="bottom" constant="45" id="Xdc-hW-nGq"/>
+                            <constraint firstItem="ceM-1z-xS4" firstAttribute="top" secondItem="Mb1-hd-H86" secondAttribute="top" constant="20" id="hhP-B3-X8Y"/>
+                            <constraint firstItem="D43-Ui-4s7" firstAttribute="top" secondItem="c3p-KX-hfO" secondAttribute="bottom" constant="45" id="pSK-xJ-6vU"/>
+                            <constraint firstItem="WKU-sK-iuO" firstAttribute="centerX" secondItem="Mb1-hd-H86" secondAttribute="centerX" id="y7n-D7-wbV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bountyLabel" destination="D43-Ui-4s7" id="Obe-qP-riP"/>
+                        <outlet property="imgView" destination="WKU-sK-iuO" id="wM8-dH-U3M"/>
+                        <outlet property="nameLabel" destination="c3p-KX-hfO" id="5J8-pW-uEo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vOf-oQ-sQi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="close_ic" width="128" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
